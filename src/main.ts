@@ -1,3 +1,5 @@
+import "./app/bootstrap/bootstrap.js";
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -9,4 +11,6 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
+  .then(() => {  /* angularjs run block code */ })
+  .then(() => {  /* more run block code if rquired */ })
   .catch(err => console.log(err));
